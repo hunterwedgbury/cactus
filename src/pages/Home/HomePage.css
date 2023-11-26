@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "UnivaNova-Heavy";
+  src: url("../../src/styles/fonts/UnivaNova-Heavy.ttf") format(".ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "UnivaNova-Light";
+  src: url("../../src/styles/fonts/UnivaNova-Light.ttf") format(".ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "UnivaNova-Hairline";
+  src: url("../../src/styles/fonts/UnivaNova-Hairline.ttf") format(".ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raiders";
+  src: url("../../src/styles/fonts/Raiders.ttf") format(".ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito-Light";
+  src: url("../../src/styles/fonts/Nunito-Light.ttf") format(".ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 87.5vh;
+}
+.home__header-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  font-family: "UnivaNova-Heavy";
+}
+.home__sub-header-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 0;
+}
+.home__body-container {
+  padding: 0 2rem;
+}
+.home__sub-header {
+  font-family: "UnivaNova-Hairline";
+  width: 75%;
+  text-align: center;
+}
+.home__body {
+  display: flex;
+  justify-content: center;
+  font-family: "UnivaNova-Light";
+  font-size: 0.8rem;
+  text-align: center;
+}
+.home__points-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.25rem 0 0 0;
+  border: 0.1rem solid #f5f5f5;
+  border-radius: 50px;
+  height: 3rem;
+  width: 6.5rem;
+}
+.home__points {
+  font-family: "UnivaNova-Light";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6e7199;
+}
+.home__points-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-left: 0.5rem;
+}
+.home__box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+.home__box1 {
+  height: 7.5rem;
+  width: 7.5rem;
+  border: 0.05rem solid #7dc49a;
+  background-color: #7dc49a;
+  border-radius: 25px;
+  margin-right: 1rem;
+}
+.home__box2 {
+  height: 7.5rem;
+  width: 7.5rem;
+  border: 0.05rem solid #6e7199;
+  background-color: #6e7199;
+  border-radius: 25px;
+}
+.home__box-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-top: 1rem;
+  margin-left: 1.25rem;
+}
+.home__box-text {
+  font-family: "UnivaNova-Light";
+  font-size: 0.8rem;
+  color: white;
+  padding-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+.home__art {
+  display: flex;
+  justify-content: center;
+  height: 8.5rem;
+}
+.home__art img {
+  height: 8.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=HomePage.css.map */

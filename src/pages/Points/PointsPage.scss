@@ -1,0 +1,103 @@
+@use '../../styles/colours' as *;
+@use '../../styles/fonts' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 87.5vh;
+    padding: 0 2rem;
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem 0;
+        width: 100%;
+    
+        &--arrow {
+            display: flex;
+            flex: 1;
+            justify-content: flex-start;
+            align-items: center;
+            height: 1rem;
+            width: 1rem;
+            margin-left: 0;
+            padding-left: 0;
+        }
+    
+        &--text {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            font-family: 'UnivaNova-Light';
+            font-size: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &__points-button-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__points-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        border: 0.1rem solid #f5f5f5;
+        border-radius: 35px;
+        height: 9rem;
+        width: 100%;
+        background-color: #f5f5f5;
+    }
+
+    &__points {
+        font-family: 'UnivaNova-Light';
+        font-size: 2rem;
+        font-weight: 600;
+        color: $cactus-purple;
+    }
+
+    &__points-icon {
+        height: 2rem;
+        width: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    &__body-container {
+        padding: 0 2rem;
+    } 
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        font-family: 'UnivaNova-Light';
+        font-size: 0.7rem;
+        text-align: center;
+        padding-top: 1rem;
+        width: 80%;
+    }
+
+
+
+    &__rewards-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    &__rewards-list-text {
+        font-family: 'UnivaNova-Light';
+        font-size: 0.8rem;
+    }
+}

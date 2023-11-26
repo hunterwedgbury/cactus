@@ -1,0 +1,83 @@
+.rewards-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.rewards-list__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.rewards-list__text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.rewards-list__text {
+  font-family: "UnivaNova-Light";
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+  color: black;
+}
+.rewards-list__logo {
+  display: flex;
+  height: 2.25rem;
+  width: 2.25rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+.rewards-list__bar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #6e7199;
+  border-radius: 15px;
+  height: 7.5px;
+  width: 100%;
+}
+.rewards-list__fill1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #7dc49a;
+  height: 100%;
+  width: 60%;
+  border-radius: 15px;
+}
+.rewards-list__fill2 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #7dc49a;
+  height: 100%;
+  width: 45%;
+  border-radius: 15px;
+}
+.rewards-list__fill3 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #7dc49a;
+  height: 100%;
+  width: 90%;
+  border-radius: 15px;
+}
+.rewards-list__fill4 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #7dc49a;
+  height: 100%;
+  width: 20%;
+  border-radius: 15px;
+}
+.rewards-list__fill-text {
+  display: flex;
+  position: absolute;
+  right: 2.5%;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}/*# sourceMappingURL=RewardsList.css.map */

@@ -1,0 +1,164 @@
+body {
+  margin: 0rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  height: 100%;
+}
+
+.prototype {
+  position: relative;
+  margin-right: 0rem;
+}
+
+.body-text {
+  display: none;
+}
+
+.body__text-container {
+  display: none;
+}
+
+.container {
+  width: 325px;
+  height: 48rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.iphone {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.iphone2 {
+  display: none;
+}
+
+.desktop-header {
+  display: none;
+}
+.desktop-header--grey {
+  display: none;
+}
+
+.desktop-header-logo {
+  display: none;
+}
+
+@media only screen and (min-width: 1201px) {
+  .prototype {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 1.5rem;
+  }
+  .container {
+    display: flex;
+    width: 325px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    padding-top: 2.5rem;
+  }
+  .iphone-parent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .iphone {
+    display: flex;
+    width: 330px;
+    height: 660px;
+    background-image: url("./assets/iphone2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .iphone2 {
+    display: flex;
+    position: absolute;
+    width: 375px;
+    height: 750px;
+  }
+  .desktop-header {
+    display: flex;
+    font-family: "UnivaNova-Heavy";
+    font-size: 7rem;
+    color: black;
+    padding-bottom: 2rem;
+  }
+  .desktop-header--grey {
+    display: flex;
+    font-family: "UnivaNova-Heavy";
+    font-size: 7rem;
+    color: #ccc;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    height: 7rem;
+    width: 7rem;
+  }
+  .body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .body__text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    padding: 2rem 0 0 2rem;
+    margin-right: 2rem;
+  }
+  .body__points-icon {
+    height: 1.15rem;
+    width: 1.15rem;
+    margin-left: 0.25rem;
+  }
+  .body__points-icon--body {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin: 0 0.1rem 0 0;
+  }
+  .body__text-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid #6e7199;
+    border-radius: 35px;
+    padding: 0 1.5rem;
+    margin: 3rem 0 0 5rem;
+    height: 4rem;
+    width: 14rem;
+  }
+  .body__button-text {
+    display: flex;
+    justify-content: center;
+    font-family: "UnivaNova-Light";
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .body-text {
+    display: flex;
+    justify-content: center;
+    font-family: "UnivaNova-Light";
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-right: 5rem;
+    width: 37.5rem;
+  }
+}/*# sourceMappingURL=App.css.map */

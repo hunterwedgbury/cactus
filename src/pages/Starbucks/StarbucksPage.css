@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "UnivaNova-Heavy";
+  src: url("../../src/styles/fonts/UnivaNova-Heavy.ttf") format(".ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "UnivaNova-Light";
+  src: url("../../src/styles/fonts/UnivaNova-Light.ttf") format(".ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "UnivaNova-Hairline";
+  src: url("../../src/styles/fonts/UnivaNova-Hairline.ttf") format(".ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raiders";
+  src: url("../../src/styles/fonts/Raiders.ttf") format(".ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito-Light";
+  src: url("../../src/styles/fonts/Nunito-Light.ttf") format(".ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.starbucks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 87.5vh;
+  padding: 0 2rem;
+}
+.starbucks__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem 0 1.5rem 0;
+  width: 100%;
+}
+.starbucks__header--arrow {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+.starbucks__header--text {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-family: "UnivaNova-Light";
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.starbucks__subheader {
+  font-family: "UnivaNova-Light";
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+.starbucks__text-container1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  width: 100%;
+}
+.starbucks__text-container2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  height: 1.3rem;
+}
+.starbucks__text {
+  font-family: "UnivaNova-Light";
+  font-size: 0.7rem;
+}
+.starbucks__text--bold {
+  font-family: "UnivaNova-Heavy";
+  font-size: 0.7rem;
+  margin-left: 2rem;
+}
+.starbucks__rewards-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+.starbucks__rewards-bar {
+  display: flex;
+  position: relative;
+  background-color: #6e7199;
+  border-radius: 15px;
+  height: 13.75rem;
+  width: 0.8rem;
+}
+.starbucks__rewards-bar-fill {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #7dc49a;
+  height: 8.25rem;
+  width: 0.8rem;
+  border-radius: 15px;
+}
+.starbucks__free-container {
+  border: 0.2rem solid white;
+  border-radius: 35px;
+  background-color: #7dc49a;
+  height: 1.3rem;
+  width: 3.25rem;
+  margin-left: 0.5rem;
+}
+.starbucks__free-text {
+  display: flex;
+  justify-content: center;
+  font-family: "UnivaNova-Heavy";
+  font-size: 0.7rem;
+  width: 100%;
+  color: white;
+}
+.starbucks__redeem-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+  border-bottom: 0.1rem solid #f5f5f5;
+}
+.starbucks__redeem-text {
+  font-family: "UnivaNova-Light";
+  font-size: 0.9rem;
+  color: black;
+  width: 100%;
+}
+.starbucks__points-button-container {
+  display: flex;
+  flex-direction: row;
+}
+.starbucks__points-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #7dc49a;
+  border-radius: 35px;
+  height: 2rem;
+  width: 7rem;
+}
+.starbucks__points-icon-text {
+  font-family: "UnivaNova-Light";
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+}
+.starbucks__points-icon {
+  height: 1.15rem;
+  width: 1.15rem;
+  margin-left: 0.25rem;
+}
+.starbucks__body-container {
+  padding: 0 2rem;
+}
+.starbucks__art {
+  width: 100%;
+  border: 0.1rem solid #f5f5f5;
+  border-radius: 20px;
+}
+.starbucks__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.starbucks__text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.starbucks__bar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #6e7199;
+  border-radius: 15px;
+  margin: 1rem 0;
+  height: 7.5px;
+  width: 100%;
+}
+.starbucks__bar-text {
+  font-family: "UnivaNova-Light";
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+  color: black;
+}
+.starbucks__fill1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #7dc49a;
+  height: 100%;
+  width: 60%;
+  border-radius: 15px;
+}
+.starbucks__fill-text {
+  display: flex;
+  position: absolute;
+  right: 2.5%;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+.starbucks__logo {
+  display: flex;
+  height: 2.25rem;
+  width: 2.25rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}/*# sourceMappingURL=StarbucksPage.css.map */

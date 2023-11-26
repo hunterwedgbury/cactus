@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "UnivaNova-Heavy";
+  src: url("../../src/styles/fonts/UnivaNova-Heavy.ttf") format(".ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "UnivaNova-Light";
+  src: url("../../src/styles/fonts/UnivaNova-Light.ttf") format(".ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "UnivaNova-Hairline";
+  src: url("../../src/styles/fonts/UnivaNova-Hairline.ttf") format(".ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raiders";
+  src: url("../../src/styles/fonts/Raiders.ttf") format(".ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito-Light";
+  src: url("../../src/styles/fonts/Nunito-Light.ttf") format(".ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 87.5vh;
+  width: 100%;
+  padding: 0 2rem;
+}
+.profile__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+.profile__header--arrow {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+.profile__header--text {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-family: "UnivaNova-Light";
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.profile__points-button-container {
+  display: flex;
+  flex-direction: row;
+}
+.profile__points-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border: 0.1rem solid #f5f5f5;
+  border-radius: 35px;
+  height: 9rem;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.profile__points {
+  font-family: "UnivaNova-Light";
+  font-size: 2rem;
+  font-weight: 600;
+  color: #6e7199;
+}
+.profile__points-icon {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 0.5rem;
+}
+.profile__body-container {
+  padding: 0 2rem;
+}
+.profile__body {
+  display: flex;
+  justify-content: center;
+  font-family: "UnivaNova-Light";
+  font-size: 0.7rem;
+  text-align: center;
+  padding-top: 1rem;
+  width: 80%;
+}
+.profile__rewards-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.profile__rewards-list-text {
+  font-family: "UnivaNova-Light";
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+.profile__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid #f5f5f5;
+}
+.profile__container--borderless {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 0rem;
+}
+.profile__text {
+  font-family: "UnivaNova-Light";
+  font-size: 0.9rem;
+  color: black;
+}/*# sourceMappingURL=ProfilePage.css.map */

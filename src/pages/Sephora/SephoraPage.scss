@@ -1,0 +1,264 @@
+@use '../../styles/colours' as *;
+@use '../../styles/fonts' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sephora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 87.5vh;
+    padding: 0 2rem;
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem 0 1.5rem 0;
+        width: 100%;
+    
+        &--arrow {
+            display: flex;
+            flex: 1;
+            justify-content: flex-start;
+            align-items: center;
+            height: 1rem;
+            width: 1rem;
+            margin-left: 0;
+            padding-left: 0;
+        }
+    
+        &--text {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            font-family: 'UnivaNova-Light';
+            font-size: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &__subheader {
+        font-family: 'UnivaNova-Light';
+        font-size: 0.8rem;
+        margin-top: 2rem;
+
+        &--text {
+            font-family: 'UnivaNova-Light';
+            font-size: 0.7rem;
+            color: black;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__text-container1 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        width: 100%;
+    }
+
+    &__text-container2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0.5rem;
+        height: 1.3rem;
+    }
+
+    &__text {
+        font-family: 'UnivaNova-Light';
+        font-size: 0.7rem;
+
+        &--bold {
+            font-family: 'UnivaNova-Heavy';
+            font-size: 0.7rem;
+            margin-left: 2rem;
+        }
+    }
+
+    &__rewards-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    &__rewards-bar {
+        display: flex;
+        position: relative;
+        background-color: $cactus-purple;
+        border-radius: 15px;
+        height: 13.75rem;
+        width: 0.8rem;
+    }
+
+    &__rewards-bar-fill {
+        display: flex;
+        position: relative;
+        align-items: center;
+        background-color: $cactus-green;
+        height: 8.25rem;
+        width: 0.8rem;
+        border-radius: 15px;
+    }
+
+
+
+
+    &__free-container {
+        border: 0.2rem solid white;
+        border-radius: 35px;
+        background-color: $cactus-green;
+        height: 1.3rem;
+        width: 3.25rem;
+        margin-left: 0.5rem;
+    }
+
+    &__free-text {
+        display: flex;
+        justify-content: center;
+        font-family: 'UnivaNova-Heavy';
+        font-size: 0.7rem;
+        width: 100%;
+        color: white;
+    }
+
+
+
+
+    &__redeem-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // margin: 1rem 0 0 0;
+        padding: 1rem 0;
+        width: 100%;
+        border-bottom: 0.1rem solid #f5f5f5;
+    }
+
+    &__redeem-text {
+        font-family: 'UnivaNova-Light';
+        font-size: 0.9rem;
+        color: black;
+        width: 100%;
+    }
+    
+    &__points-button-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__points-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: $cactus-green;
+        border-radius: 35px;
+        height: 2rem;
+        width: 7rem;
+    }
+
+    &__points-icon-text {
+        font-family: 'UnivaNova-Light';
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: white;
+    }
+
+    &__points-icon {
+        height: 1.15rem;
+        width: 1.15rem;
+        margin-left: 0.25rem;
+    }
+
+    &__body-container {
+        padding: 0 2rem;
+    } 
+
+    &__art {
+        width: 100%;
+        border: 0.1rem solid #f5f5f5;
+        border-radius: 20px;
+    }
+
+
+
+    
+    &__container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__bar {
+        display: flex;
+        position: relative;
+        align-items: center;
+        background-color: $cactus-purple;
+        border-radius: 15px;
+        margin: 1rem 0;
+        height: 7.5px;
+        width: 100%;
+    }
+
+    &__bar-text {
+        font-family: 'UnivaNova-Light';
+        font-size: 0.8rem;
+        padding-bottom: 0.5rem;
+        color: black;
+    }
+
+    &__fill1 {
+        display: flex;
+        position: relative;
+        align-items: center;
+        background-color: $cactus-green;
+        height: 100%;
+        width: 0%;
+        border-radius: 15px;
+    }
+    
+    &__fill-text {
+        display: flex;
+        position: absolute;
+        right: 2.5%;
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+
+        &--zero {
+            display: flex;
+            position: absolute;
+            left: 0.25rem;
+            color: black;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        height: 2.25rem;
+        width: 2.25rem;
+        margin-right: 1rem;
+        border-radius: 50%;
+    }
+}
