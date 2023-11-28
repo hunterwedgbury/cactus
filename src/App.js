@@ -1,4 +1,5 @@
 import "./App.scss";
+import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HomePage from "./pages/Home/HomePage.js";
@@ -18,6 +19,8 @@ import Nav from "./components/Nav/Nav.js";
 import iphone from "./assets/iphone2.png";
 import arrow from "./assets/arrow-green.png";
 import underline from "./assets/underline.png";
+import cactus from "./assets/cactus-green.png";
+import cactusWhite from "./assets/cactus-white.png";
 import image1 from "./assets/shop-photo1.jpg";
 import image2 from "./assets/shop-photo2.jpg";
 import image3 from "./assets/shop-photo3.jpg";
@@ -29,6 +32,10 @@ import image8 from "./assets/shop-photo6.jpg";
 import appStore from "./assets/app-store.png";
 import mockup1 from "./assets/iphone-mockup1.png";
 import mockup2 from "./assets/iphone-mockup2.png";
+import screen1 from "./assets/screen1.png";
+import screen2 from "./assets/screen2.png";
+import screen3 from "./assets/screen3.png";
+import screen4 from "./assets/screen4.png";
 
 function App() {
   return (
@@ -39,13 +46,9 @@ function App() {
           <h1 className="hero__desktop-header">cactus</h1>
           <p className="hero__text">The loyalty rewards app for</p>
           <p className="hero__text">every transaction on the planet.</p>
-          {/* <img className="hero__underline" alt="green underline" src={underline} /> */}
+          {/* <img className="hero__underline" src={underline} /> */}
           <div className="hero__app-store">
-            <img
-              className="hero__app-store-logo"
-              alt="appstore logo"
-              src={appStore}
-            />
+            <img className="hero__app-store-logo" src={appStore} />
           </div>
           <button className="hero__text-button" id="scrollButton">
             <p className="hero__button-text">Contact Us</p>
@@ -53,7 +56,7 @@ function App() {
         </div>
 
         <div className="prototype">
-          <img className="iphone" alt="iphone template" src={iphone} />
+          <img className="iphone" src={iphone} />
 
           <div className="container">
             <BrowserRouter>
@@ -78,19 +81,19 @@ function App() {
 
         <div className="try-container">
           <p className="try-container__text">try cactus</p>
-          <img className="try-container__arrow" alt="arrow" src={arrow} />
+          <img className="try-container__arrow" src={arrow} />
         </div>
       </div>
 
       <div className="subheader1">
-        <p className="subheader1__text1">1 REWARDS APP,</p>
+        <p className="subheader1__text1">ONE REWARDS APP,</p>
         <p className="subheader1__text2">FOR EVERYTHING</p>
       </div>
 
       <div className="section1">
         <div className="section1__image-container">
-          <img className="section1__image" alt="app ui page1" src={mockup1} />
-          {/* <img className="section2__image" alt="shopping image1" src={pageImage1} /> */}
+          <img className="section1__image" src={mockup1} />
+          {/* <img className="section2__image" src={pageImage1} /> */}
         </div>
         <div className="section1__text-container">
           <p className="section1__header">
@@ -113,8 +116,8 @@ function App() {
           </p>
         </div>
         <div className="section2__image-container">
-          <img className="section2__image" alt="app ui page2" src={mockup2} />
-          {/* <img className="page__image" alt="shopping image2" src={pageImage2} /> */}
+          <img className="section2__image" src={mockup2} />
+          {/* <img className="page__image" src={pageImage2} /> */}
         </div>
       </div>
 
@@ -130,11 +133,7 @@ function App() {
             Customers are 75% more likely to make another purchase after
             receiving an incentive
           </p>
-          <img
-            className="section3__underline1"
-            alt="underline"
-            src={underline}
-          />
+          <img className="section3__underline1" src={underline} />
           <p className="section3__body">from a loyalty rewards program.</p>
         </div>
         <div className="section3__text-container">
@@ -143,11 +142,7 @@ function App() {
             84% of customers say they’re more likely to shop with a brand that
             offers loyalty rewards.
           </p>
-          <img
-            className="section3__underline2"
-            alt="underline"
-            src={underline}
-          />
+          <img className="section3__underline2" src={underline} />
         </div>
         <div className="section3__text-container">
           <p className="section3__header">MORE REFERRALS</p>
@@ -155,55 +150,51 @@ function App() {
             70% of customers are more likely to recommend a brand if it has a
             good loyalty rewards program.
           </p>
-          <img
-            className="section3__underline3"
-            alt="underline"
-            src={underline}
-          />
+          <img className="section3__underline3" src={underline} />
         </div>
       </div>
 
-      {/* <div className="page3">
-        <div className="page3__screen-container">
-          <div className="page3__text-container">
-            <p className="page3__header">EARN POINTS</p>
+      <div className="ui-gallery">
+        <div className="ui-gallery__screen-container">
+          <div className="ui-gallery__text-container">
+            <p className="ui-gallery__header">EARN POINTS</p>
           </div>
-          <img className="page3__image" alt="app ui page3" src={screen1} />
+          <img className="ui-gallery__image" src={screen1} />
         </div>
-        <div className="page3__screen-container">
-          <div className="page3__text-container">
-            <p className="page3__header">TRACK REWARDS</p>
+        <div className="ui-gallery__screen-container">
+          <div className="ui-gallery__text-container">
+            <p className="ui-gallery__header">TRACK REWARDS</p>
           </div>
-          <img className="page3__image" alt="app ui page4" src={screen2} />
+          <img className="ui-gallery__image" src={screen2} />
         </div>
-        <div className="page3__screen-container">
-          <div className="page3__text-container">
-            <p className="page3__header">PAY IN STORE</p>
+        <div className="ui-gallery__screen-container">
+          <div className="ui-gallery__text-container">
+            <p className="ui-gallery__header">PAY IN STORE</p>
           </div>
-          <img className="page3__image" alt="app ui page5" src={screen3} />
+          <img className="ui-gallery__image" src={screen3} />
         </div>
-        <div className="page3__screen-container">
-          <div className="page3__text-container">
-            <p className="page3__header">REDEEM POINTS</p>
+        <div className="ui-gallery__screen-container">
+          <div className="ui-gallery__text-container">
+            <p className="ui-gallery__header">REDEEM POINTS</p>
           </div>
-          <img className="page3__image" alt="app ui page6" src={screen4} />
+          <img className="ui-gallery__image" src={screen4} />
         </div>
-      </div> */}
+      </div>
 
-      <div className="gallery">
+      {/* <div className="gallery">
         <div className="gallery__container1">
-          <img className="gallery__image1" alt="man shopping" src={image1} />
-          <img className="gallery__image" alt="woman shopping" src={image5} />
-          <img className="gallery__image" alt="book store" src={image2} />
-          <img className="gallery__image" alt="barber shop" src={image4} />
+          <img className="gallery__image1" src={image1} />
+          <img className="gallery__image" src={image5} />
+          <img className="gallery__image" src={image2} />
+          <img className="gallery__image" src={image4} />
         </div>
         <div className="gallery__container2">
-          <img className="gallery__image" alt="man shopping2" src={image6} />
-          <img className="gallery__image" alt="woman shopping2" src={image3} />
-          <img className="gallery__image" alt="book store2" src={image7} />
-          <img className="gallery__image8" alt="barber shop2" src={image8} />
+          <img className="gallery__image" src={image6} />
+          <img className="gallery__image" src={image3} />
+          <img className="gallery__image" src={image7} />
+          <img className="gallery__image8" src={image8} />
         </div>
-      </div>
+      </div> */}
 
       <div className="section4" id="contact">
         <p className="section4__header">Contact Us</p>

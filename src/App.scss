@@ -242,6 +242,27 @@ $iphone-breakpoint: 1200px;
     }
   }
 
+  .ui-gallery {
+    display: none;
+
+    &__screen-container {
+      display: none;
+    }
+
+    &__text-container {
+      display: none;
+    }
+
+    &__header {
+      display: none;
+      }
+    
+    &__image {
+      display: none;
+    }
+  }
+
+
 .contact {
   display: none;
 
@@ -425,7 +446,7 @@ $iphone-breakpoint: 1200px;
   &__text1 {
     display: flex;
     font-family: 'UnivaNova-Heavy';
-    font-size: 9.5rem;
+    font-size: 8.5rem;
     color: black;
     }
   
@@ -551,7 +572,7 @@ $iphone-breakpoint: 1200px;
 .section3 {
   display: flex;
   flex-direction: column;
-  margin: 6rem 0 4rem 15rem;
+  margin: 6rem 0 6rem 15rem;
 
   &__text-container {
     display: flex;
@@ -610,7 +631,7 @@ $iphone-breakpoint: 1200px;
 .section4 {
   display: flex;
   flex-direction: column;
-  margin: 6rem 0 1rem 15rem;
+  margin: 8rem 0 6rem 15rem;
 
   &__text-container {
     display: flex;
@@ -665,6 +686,36 @@ $iphone-breakpoint: 1200px;
     }
   }
 
+  .ui-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+    &__screen-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__text-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__header {
+      display: flex;
+      font-family: 'UnivaNova-Heavy';
+      font-size: 1.75rem;
+      color: black;
+      margin-bottom: 2.5rem;
+      }
+    
+    &__image {
+      display: flex;
+      height: 40rem;
+      width: 20rem;
+    }
+  }
+
   .gallery {
     display: flex;
     flex-direction: column;
@@ -709,7 +760,7 @@ $iphone-breakpoint: 1200px;
   .contact {
     display: flex;
     flex-direction: column;
-    margin: 7.5rem 0 0 0;
+    margin: 8rem 0 0 0;
 
     &__header {
       display: flex;
