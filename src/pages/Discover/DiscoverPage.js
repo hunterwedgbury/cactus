@@ -1,35 +1,30 @@
 import "./DiscoverPage.scss";
 
-import { Link } from 'react-router-dom';
+import searchIcon from "../../assets/search.png";
 
-import arrow from '../../assets/arrow.png'
-import cactusGreen from '../../assets/cactus-green.png'
-import searchIcon from '../../assets/search.png'
-
-import DiscoverList from '../../components/DiscoverList/DiscoverList'
+import DiscoverList from "../../components/DiscoverList/DiscoverList";
 
 function DiscoverPage() {
+  return (
+    <section className="discover">
+      <div className="discover__search-box-container">
+        <img className="discover__search-icon" src={searchIcon} />
+        <input
+          className="discover__search-box"
+          type="search"
+          placeholder="Search"
+        />
+      </div>
 
-    return (
-    
-        <section className='discover'>
+      <div className="discover__header">
+        <h1 className="discover__header--text">Discover</h1>
+      </div>
 
-            <div className='discover__search-box-container'>
-                <img className='discover__search-icon' src={searchIcon}/>
-                <input className='discover__search-box' type='search' placeholder='Search'/>
-            </div>
-
-            <div className='discover__header'>
-                <h1 className='discover__header--text'>Discover</h1>
-            </div>
-
-            <div className='discover__discover-list'>
-                <DiscoverList />
-            </div>
-
-        </section>
-
-    );
+      <div className="discover__discover-list">
+        <DiscoverList />
+      </div>
+    </section>
+  );
 }
-    
+
 export default DiscoverPage;
