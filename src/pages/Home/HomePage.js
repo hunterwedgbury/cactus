@@ -15,7 +15,7 @@ function HomePage() {
       </div>
 
       <div className="home__art">
-        <img src={homeArt} />
+        <img alt="home page art" src={homeArt} />
       </div>
 
       <div className="home__sub-header-container">
@@ -31,19 +31,27 @@ function HomePage() {
 
       <div className="home__points-button">
         <p className="home__points">2,150</p>
-        <img className="home__points-icon" src={cactusGreen} />
+        <img
+          className="home__points-icon"
+          alt="cactus logo"
+          src={cactusGreen}
+        />
       </div>
 
       <div class="home__box-container">
         <Link to="/points">
           <div class="home__box1">
-            <img className="home__box-icon" src={cactusWhite} />
+            <img
+              className="home__box-icon"
+              alt="cactus logo"
+              src={cactusWhite}
+            />
             <p class="home__box-text">Rewards</p>
           </div>
         </Link>
         {/* <Link to="/pay"> */}
         <div class="home__box2">
-          <img className="home__box-icon" src={creditWhite} />
+          <img className="home__box-icon" alt="cactus logo" src={creditWhite} />
           <p class="home__box-text">Pay</p>
         </div>
         {/* </Link> */}

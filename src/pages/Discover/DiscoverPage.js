@@ -8,7 +8,11 @@ function DiscoverPage() {
   return (
     <section className="discover">
       <div className="discover__search-box-container">
-        <img className="discover__search-icon" src={searchIcon} />
+        <img
+          className="discover__search-icon"
+          alt="search icon"
+          src={searchIcon}
+        />
         <input
           className="discover__search-box"
           type="search"

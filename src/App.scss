@@ -305,10 +305,8 @@ $iphone-breakpoint: 1200px;
 
 .iphone {
   display: flex;
-  position: absolute; // ON/OFF
-  // width: 330px;
+  position: absolute; 
   width: 375px;
-  // height: 660px;
   height: 750px;
 }
 
@@ -320,31 +318,6 @@ $iphone-breakpoint: 1200px;
   z-index: 2;
   padding-top: 2.5rem;
 }
-
-// .logo {
-//   display: flex;
-//   height: 7rem;
-//   width: 7rem;
-// }
-
-// .iphone-parent {
-//   display: flex;
-//   justify-content: center;
-//   width: 100%;
-
-//   position: absolute;
-//   z-index: 1;
-// }
-
-// .iphone {
-//   display: flex;
-//   width: 330px;
-//   height: 660px;
-
-//   background-image: url('./assets/iphone2.png');
-//   background-size: cover;
-//   background-repeat: no-repeat;
-// }
 
 .hero {
   display: flex;
