@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 
 import arrow from "../../assets/arrow.png";
 
-import cactusGreen from "../../assets/cactus-green.png";
-import RewardsList from "../../components/RewardsList/RewardsList";
-
 function ProfilePage() {
   return (
     <section className="profile">
