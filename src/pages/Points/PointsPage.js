@@ -27,7 +27,7 @@ function PointsPage() {
           />
         </div>
         <p className="points__body">
-          Welcome to the loyalty rewards app for every retail transaction on the
+          Welcome to the loyalty rewards app for every transaction on the
           planet.
         </p>
       </div>
