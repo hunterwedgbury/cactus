@@ -24,7 +24,7 @@ function HomePage() {
 
       <div className="home__body-container">
         <p className="home__body">
-          Welcome to the loyalty rewards app for every retail transaction on the
+          Welcome to the loyalty rewards app for every transaction on the
           planet.
         </p>
       </div>
@@ -49,12 +49,16 @@ function HomePage() {
             <p class="home__box-text">Rewards</p>
           </div>
         </Link>
-        {/* <Link to="/pay"> */}
-        <div class="home__box2">
-          <img className="home__box-icon" alt="cactus logo" src={creditWhite} />
-          <p class="home__box-text">Pay</p>
-        </div>
-        {/* </Link> */}
+        <Link to="/scan">
+          <div class="home__box2">
+            <img
+              className="home__box-icon"
+              alt="cactus logo"
+              src={creditWhite}
+            />
+            <p class="home__box-text">Pay</p>
+          </div>
+        </Link>
       </div>
     </section>
   );

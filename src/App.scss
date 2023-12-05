@@ -218,6 +218,18 @@ $iphone-breakpoint: 1200px;
     }
   }
 
+  .section56 {
+    display: none;
+  }
+
+  .section5 {
+    display: none;
+  }
+
+  .section6 {
+    display: none;
+  }
+
   .gallery {
     display: none;
 
@@ -457,7 +469,7 @@ $iphone-breakpoint: 1200px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 4rem 0 0 0;
+  margin: 6rem 0 2rem 0;
 
   &__text-container {
     display: flex;
@@ -502,7 +514,7 @@ $iphone-breakpoint: 1200px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0 0 0 0;
+  margin: 0 0 2rem 0;
 
   &__text-container {
     display: flex;
@@ -604,7 +616,9 @@ $iphone-breakpoint: 1200px;
 .section4 {
   display: flex;
   flex-direction: column;
-  margin: 8rem 0 6rem 15rem;
+  padding: 4rem 0 4rem 5rem;
+  margin-top: 4rem;
+  background-color: black;
 
   &__text-container {
     display: flex;
@@ -617,15 +631,15 @@ $iphone-breakpoint: 1200px;
     display: flex;
     flex-direction: column;
     width: 40%;
-    padding: 2rem 4rem 0 0;
-    margin: 0 12rem 2rem 0;
+    padding: 1rem 4rem 0 0;
+    margin: 0 12rem 0 0;
     }
   
   &__header {
     display: flex;
     font-family: 'UnivaNova-Heavy';
     font-size: 2.5rem;
-    color: black;
+    color: white;
     margin-bottom: 1.25rem;
     }
 
@@ -633,7 +647,7 @@ $iphone-breakpoint: 1200px;
     display: flex;
     font-family: 'UnivaNova-Heavy';
     font-size: 4.5rem;
-    color: $cactus-green;
+    color: #ccc;
     margin-left: 2rem;
     }
 
@@ -643,6 +657,7 @@ $iphone-breakpoint: 1200px;
     font-family: 'UnivaNova-Light';
     font-size: 1.25rem;
     line-height: 1.75rem;
+    color: white;
     padding-right: 5rem;
     width: 37.5rem;
 
@@ -651,6 +666,7 @@ $iphone-breakpoint: 1200px;
       justify-content: flex-start;
       font-family: 'UnivaNova-Light';
       font-size: 1.25rem;
+      color: white;
       line-height: 1.75rem;
       font-weight: 700;
       padding-right: 5rem;
@@ -658,6 +674,105 @@ $iphone-breakpoint: 1200px;
       }
     }
   }
+
+  .section56 {
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 0 10rem 0;
+    gap: 8rem;
+  }
+
+  .section5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+  
+    &__text-container {
+      display: flex;
+      flex-direction: column;
+      // width: 40%;
+      padding: 0 4rem 0 10rem;
+      margin-bottom: 2rem;
+      }
+  
+    &__image-container {
+      display: flex;
+      margin: 2rem 0 2rem 2rem;
+      }
+  
+    &__image {
+      display: flex;
+      height: 18rem;
+      width: 30rem;
+      border-radius: 15px;
+      }
+    
+    &__header {
+      display: flex;
+      font-family: 'UnivaNova-Heavy';
+      font-size: 2.5rem;
+      color: black;
+      margin-bottom: 2rem;
+      }
+  
+    &__body {
+      display: flex;
+      justify-content: flex-start;
+      font-family: 'UnivaNova-Light';
+      font-size: 1.25rem;
+      line-height: 2.25rem;
+      padding-right: 5rem;
+      width: 32rem;
+      }
+    }
+  
+  .section6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  
+    &__text-container {
+      display: flex;
+      flex-direction: column;
+      // width: 40%;
+      padding: 0 8rem 0 0;
+      margin-bottom: 2rem;
+      }
+  
+    &__image-container {
+      display: flex;
+      margin: 2rem 4rem 2rem 0;
+      }
+  
+    &__image {
+      display: flex;
+      height: 18rem;
+      width: 30rem;
+      border-radius: 15px;
+      }
+    
+    &__header {
+      display: flex;
+      font-family: 'UnivaNova-Heavy';
+      font-size: 2.5rem;
+      color: black;
+      margin-bottom: 2rem;
+      }
+  
+    &__body {
+      display: flex;
+      justify-content: flex-start;
+      font-family: 'UnivaNova-Light';
+      font-size: 1.25rem;
+      line-height: 2.25rem;
+      padding-right: 5rem;
+      width: 32rem;
+      }
+    }
 
   .ui-gallery {
     display: flex;

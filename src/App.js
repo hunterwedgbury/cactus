@@ -18,7 +18,6 @@ import Nav from "./components/Nav/Nav.js";
 
 import iphone from "./assets/iphone2.png";
 import arrow from "./assets/arrow-green.png";
-import underline from "./assets/underline.png";
 import appStore from "./assets/app-store.png";
 import mockup1 from "./assets/iphone-mockup1.png";
 import mockup2 from "./assets/iphone-mockup2.png";
@@ -26,6 +25,10 @@ import screen1 from "./assets/screen1.png";
 import screen2 from "./assets/screen2.png";
 import screen3 from "./assets/screen3.png";
 import screen4 from "./assets/screen4.png";
+
+import stockScan1 from "./assets/stock-scan1.jpg";
+import stockScan2 from "./assets/stock-scan2.jpg";
+import stockScan3 from "./assets/stock-scan3.jpg";
 
 function App() {
   return (
@@ -125,43 +128,56 @@ function App() {
         <p className="subheader2__text2">LOYALTY REWARDS?</p>
       </div>
 
-      <div className="section3">
-        <div className="section3__text-container">
-          <p className="section3__header">MORE SALES</p>
-          <p className="section3__body">
-            Customers are 75% more likely to make another purchase after
-            receiving an incentive
-          </p>
-          <img
-            className="section3__underline1"
-            alt="underline"
-            src={underline}
-          />
-          <p className="section3__body">from a loyalty rewards program.</p>
+      <div className="section56">
+        <div className="section5">
+          <div className="section5__image-container">
+            <img
+              className="section5__image"
+              alt="customer shopping 1"
+              src={stockScan1}
+            />
+          </div>
+          <div className="section5__text-container">
+            <p className="section5__header">More sales</p>
+            <p className="section5__body">
+              Customers are 75% more likely to make another purchase after
+              receiving an incentive from a loyalty rewards program.
+            </p>
+          </div>
         </div>
-        <div className="section3__text-container">
-          <p className="section3__header">MORE CUSTOMERS</p>
-          <p className="section3__body">
-            84% of customers say they’re more likely to shop with a brand that
-            offers loyalty rewards.
-          </p>
-          <img
-            className="section3__underline2"
-            alt="underline"
-            src={underline}
-          />
+
+        <div className="section6">
+          <div className="section6__text-container">
+            <p className="section6__header">More customers</p>
+            <p className="section6__body">
+              84% of customers say they’re more likely to shop with a brand that
+              offers loyalty rewards.
+            </p>
+          </div>
+          <div className="section6__image-container">
+            <img
+              className="section6__image"
+              alt="customer shopping 2"
+              src={stockScan2}
+            />
+          </div>
         </div>
-        <div className="section3__text-container">
-          <p className="section3__header">MORE REFERRALS</p>
-          <p className="section3__body">
-            70% of customers are more likely to recommend a brand if it has a
-            good loyalty rewards program.
-          </p>
-          <img
-            className="section3__underline3"
-            alt="underline"
-            src={underline}
-          />
+
+        <div className="section5">
+          <div className="section5__image-container">
+            <img
+              className="section5__image"
+              alt="customer shopping 3"
+              src={stockScan3}
+            />
+          </div>
+          <div className="section5__text-container">
+            <p className="section5__header">More referrals</p>
+            <p className="section5__body">
+              70% of customers are more likely to recommend a brand if it has a
+              good loyalty rewards program.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -196,29 +212,9 @@ function App() {
         <p className="section4__header">Contact Us</p>
         <div className="section4__text-container">
           <div className="section4__contact-container">
-            <p className="section4__body--bold">Hunter Wedgbury</p>
-            <p className="section4__body">hunterwedgbury@gmail.com</p>
+            <p className="section4__body">info@cactusapp.ca</p>
             <p className="section4__body">(647) 458-4868</p>
           </div>
-          <div className="section4__contact-container">
-            <p className="section4__body--bold">Noah Wedgbury</p>
-            <p className="section4__body">noah.wedgburyy@gmail.com</p>
-            <p className="section4__body">(416) 889-3720</p>
-          </div>
-          <p className="section4__subheader">SALES</p>
-        </div>
-        <div className="section4__text-container">
-          <div className="section4__contact-container">
-            <p className="section4__body--bold">Andy Craig</p>
-            <p className="section4__body">andycraig200@gmail.com</p>
-            <p className="section4__body">(647) 808-9481</p>
-          </div>
-          <div className="section4__contact-container">
-            <p className="section4__body--bold">Niko Hoogeveen</p>
-            <p className="section4__body">niko.hoogeveen@gmail.com</p>
-            <p className="section4__body">(705) 220-5623</p>
-          </div>
-          <p className="section4__subheader">PRODUCT</p>
         </div>
       </div>
     </div>
