@@ -138,20 +138,20 @@ function App() {
             />
           </div>
           <div className="section5__text-container">
-            <p className="section5__header">More sales</p>
-            <p className="section5__body">
-              Customers are 75% more likely to make another purchase after
-              receiving an incentive from a loyalty rewards program.
+            <p className="section6__header">More customers</p>
+            <p className="section6__body">
+              84% of customers say they’re more likely to shop with a brand that
+              offers loyalty rewards.
             </p>
           </div>
         </div>
 
         <div className="section6">
           <div className="section6__text-container">
-            <p className="section6__header">More customers</p>
-            <p className="section6__body">
-              84% of customers say they’re more likely to shop with a brand that
-              offers loyalty rewards.
+            <p className="section5__header">More sales</p>
+            <p className="section5__body">
+              Customers are 75% more likely to make another purchase after
+              receiving an incentive from a loyalty rewards program.
             </p>
           </div>
           <div className="section6__image-container">
